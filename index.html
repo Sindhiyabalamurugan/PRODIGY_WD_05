@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome to Weather App</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ... existing code ... -->
+
+<div class="container">
+    <h1>Welcome to Weather App</h1>
+
+    <!-- Use Current Location Button -->
+    <button class="option-btn" onclick="useCurrentLocation()">Use Current Location</button>
+
+    <!-- Manual Enter Option Button -->
+    <button class="option-btn" id="manualEntryButton" onclick="showManualEntry()">Manual Enter Option</button>
+
+    <!-- Manual Entry Section (Initially Hidden) -->
+    <div id="manualEntry" style="display: none;">
+        <input type="text" id="cityInput" placeholder="Enter city">
+        <button class="search-btn" onclick="searchByCity()">Search</button>
+    </div>
+
+    <!-- Weather Data Section (Initially Hidden) -->
+    <div id="weatherData" style="display: none;">
+        <!-- Weather data will be displayed here -->
+    </div>
+</div>
+
+<!-- ... existing code ... -->
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

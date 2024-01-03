@@ -1,0 +1,85 @@
+/* Reset some default styles */
+body, h1, p, button, input {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background styling for the entire page */
+body {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full height of the viewport */
+    background: linear-gradient(45deg, #4A90E2, #F5A623); /* Gradient background */
+    color: #333; /* Dark text color */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container styling */
+.container {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff; /* White background for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition for transform effect */
+}
+
+/* Hover effect for the container */
+.container:hover {
+    transform: translateY(-5px); /* Add a slight vertical lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Button styling */
+.option-btn, .search-btn {
+    display: inline-block;
+    width: 48%;
+    padding: 12px;
+    margin: 10px 1%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-btn:hover, .search-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Manual Entry Section */
+#manualEntry {
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+}
+
+#cityInput {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Weather Data Section */
+#weatherData {
+    margin-top: 30px;
+    display: none; /* Initially hidden */
+    text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .option-btn, .search-btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #cityInput {
+        width: 100%;
+        margin-right: 0;
+    }
+}
